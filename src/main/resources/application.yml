@@ -1,0 +1,24 @@
+cloud:
+  aws:
+    credentials:
+      access-key: AKIA6KZTVXHXC3D53MZD
+      secret-key: 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
+    region:
+      static: ap-south-1
+    stack:
+      auto: false
+
+application:
+  bucket:
+    name: javafilesstoragebucket
+
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      fileSizeThreshold: 2MB
+      maxFileSize: 5MB
+      maxRequestSize: 10MB
+
+server:
+  port: 9095
